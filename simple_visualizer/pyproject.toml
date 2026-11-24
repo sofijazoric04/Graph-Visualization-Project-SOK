@@ -1,0 +1,7 @@
+[project]
+name = "simple-visualizer"
+version = "1.0.0"
+dependencies = ["api"]
+
+[project.entry-points."graph.visualizer"]
+simple = "simple_visualizer.plugin:SimpleVisualizer"
