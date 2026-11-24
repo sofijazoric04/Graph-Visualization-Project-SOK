@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "graph-platform"
+version = "0.1.0"
+description = "Platforma (Core) za vizualizaciju grafova - pretraga, filtriranje, workspace i komunikacija sa plugin-ovima"
+requires-python = ">=3.10"
+dependencies = [
+    # Kad api bude izdvojen kao zasebna komponenta, ovde cu upisati njegovo ime, npr:
+    # "graph-api>=0.1.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["graph_platform*"]
