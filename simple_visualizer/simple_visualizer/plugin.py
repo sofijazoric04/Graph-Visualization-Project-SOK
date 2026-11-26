@@ -5,7 +5,7 @@ class SimpleVisualizer(VisualizerPlugin):
 
     @property
     def name(self):
-        return "mock_visualizer"
+        return "mock_simple_visualizer"
 
     def visualize(self, graph):
         return "<div>Mock visualization</div>"
