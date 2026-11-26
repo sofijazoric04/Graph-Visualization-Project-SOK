@@ -15,8 +15,8 @@ class PluginRegistry:
         self._data_sources = {}
 
     def discover_plugins(self):
-        self.discover_data_sources = {}
-        self.discover_visualizers = {}
+        self.discover_data_sources()
+        self.discover_visualizers()
 
     def discover_visualizers(self):
         discovered_plugins = entry_points(
