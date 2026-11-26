@@ -15,10 +15,10 @@ class GraphQuery(ABC):
 
     # true if node satisfies the query
     @abstractmethod
-    def matches(self, node) -> bool:
+    def matches(self, node):
         pass
 
     # shows all searches and filters that are apllied
     @abstractmethod
-    def __str__(self) -> str:
+    def __str__(self):
         pass
