@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "data_source_plugin_1"
 version = "1.0.0"
@@ -5,3 +9,7 @@ dependencies = ["api"]
 
 [project.entry-points."graph.data_source"]
 data01 = "data_source_plugin_1.plugin:DataSource1"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["data_source_plugin_1*"]
