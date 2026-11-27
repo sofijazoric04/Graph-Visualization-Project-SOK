@@ -5,7 +5,7 @@ class DataSource1(DataSourcePlugin):
 
     @property
     def name(self):
-        return "mock_data_source"
+        return "mock_data_source_1"
 
     def load(self, source):
         return {
